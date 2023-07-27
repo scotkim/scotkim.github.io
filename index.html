@@ -10,46 +10,167 @@
         <meta property="og:description" content="This website is the Scott Kim's portfolio website." />
         <link rel="canonical" href="https://scotkim.github.io/" />
         <meta property="og:url" content="https://scotkim.github.io/" />
-        <meta property="og:site_name" content="Scott Kim’s Portfolio Website" />
+        <meta property="og:site_name" content="Scott Kim Portfolio Website" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content="scotkim.github.io" />
         <script type="application/ld+json">
             {"@context":"https://schema.org","@type":"WebSite","description":"This website is the Scott Kim's portfolio website.","headline":"Scott Kim's Portfolio Website","name":"Scott Kim's Portfolio Website","url":"https://scotkim.github.io/"}
         </script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
     <body>
-
         <header>
-            <h1>Three words</h1>
-            <nav>
-                <a>one word</a>
-                <a>one word</a>
-                <a>one word</a>
-                <a>one word</a>
-            </nav>
+            <div class="navbar">
+                <a class="logo" href="/">
+                    <img src="assets/img/scottkim-logo.svg" alt="logo" />
+                </a>
+                <ul class="links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                </ul>
+                <a href="assets/resume.pdf" class="action_btn">Resume</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
         </header>
 
         <main>
-            <header>
-                <h1>five words</h1>
-            </header>
-            <section>
-                <h2>three words</h2>
-                <p>forty-six words</p>
-                <p>forty-four words</p>
-            </section>
-            <section>
-                <h2>seven words</h2>
-                <p>sixty-eight words</p>
-                <p>forty-four words</p>
-            </section>
+          <section id="work">
+            <ul class="cards">
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--hhsd10"></div>
+                  <div class="card__content">
+                    <div class="card__title">HHS Grant Solutions PSW</div>
+                    <p class="card__text">Drupal 10, HTML5, CSS3, jQuery, PHP8, Twig</p>
+                    <a class="btn btn--block card__btn" href="#" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--nibib"></div>
+                  <div class="card__content">
+                    <div class="card__title">National Institute of Biomedical Imaging and Bioengineering Website</div>
+                    <p class="card__text">Drupal 8, HTML5, Sass, jQuery, PHP7, Twig</p>
+                    <a class="btn btn--block card__btn" href="https://www.nibib.nih.gov/" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--nibibnewsletter"></div>
+                  <div class="card__content">
+                    <div class="card__title">NIBIB Email Newsletter</div>
+                    <p class="card__text">HTML5 table, CSS</p>
+                    <a class="btn btn--block card__btn" href="/nibibnewsletter" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--fic"></div>
+                  <div class="card__content">
+                    <div class="card__title">Florida International College</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design</p>
+                    <a class="btn btn--block card__btn" href="https://www.fic.college/" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--mlfmd"></div>
+                  <div class="card__content">
+                    <div class="card__title">My Life Foundation</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design</p>
+                    <a class="btn btn--block card__btn" href="https://www.mlfmd.org/" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--hanjoongkwan"></div>
+                  <div class="card__content">
+                    <div class="card__title">Han Joong Kwan Restaurant</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design, Video</p>
+                    <a class="btn btn--block card__btn" href="https://www.hanjoongkwan.com/" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--hueacu"></div>
+                  <div class="card__content">
+                    <div class="card__title">Hue Acupuncture Clinic</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design</p>
+                    <a class="btn btn--block card__btn" href="https://www.hueacu.com/" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--unc"></div>
+                  <div class="card__content">
+                    <div class="card__title">United National Construction, Inc Website</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design</p>
+                    <a class="btn btn--block card__btn" href="#" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--wskchurch"></div>
+                  <div class="card__content">
+                    <div class="card__title">Washington Korean SDA Church Website</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design</p>
+                    <a class="btn btn--block card__btn" href="https://wsk.church/" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--prayer"></div>
+                  <div class="card__content">
+                    <div class="card__title">International Prayer Website</div>
+                    <p class="card__text">Wordpress, HTML, CSS, jQuery, Self-Taught Graphic Design</p>
+                    <a class="btn btn--block card__btn" href="#" target="_parent">Link</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
         </main>
 
         <footer>
-            <p>five words</p>
+            <p> </p>
         </footer>
         
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
